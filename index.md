@@ -11,6 +11,63 @@ GPT-2 is one of the world's largest language models publicly available. It has 1
 
 ## Results
 
+## Figures
+Figure 1.1 generated text after 200 iteration of training on Beatles
+```
+======== SAMPLE 1 ========
+ better at the wheel), but I do love when I can drive the car on the corner
+
+  No, I won't burn
+
+  Don't make it worse, don't make it worse 
+
+(Oh yeah, see you next time)<|endoftext|>New York City has been rocked by a mass shooting since the start of the new year. So what is an "angel of death"?
+
+The New York Times
+
+There is no word yet on the cause of death of the first person to be killed in the shooting in a Jewish market in Paris on Feb. 13, 2012. (Eve Shopham/The Washington Post)
+
+The first-person shooter
+
+No, not a Jewish man
+Who told you to "shoot the Jews"?
+
+When we pray together,
+We've got your back
+
+We just need to be mindful of each other
+
+You're breathing life into this world,
+Shall we go check on him?
+(He's dead)
+
+The mother fucker
+Why don't you tell him to stop?
+(You're dead)
+
+It's impossible for him to see through these eyes
+Because he's too young to be here
+He needs your love
+
+Love in the form of his life
+You're crying wolf
+You know what I like about him?
+A loving brother and a kind heart
+Love in all its forms<|endoftext|>Tottenham Hotspur 0-2 Manchester City
+It was a close call at the Etihad Stadium when Spurs took pride in the result as they fell within six points of Premier League leaders Manchester City.
+The visitors took the lead shortly before half-time when Danny Rose headed in a fine save from the top scorer just seconds after the break and it was not long before City began to slip back into the draw.
+Kanu played a key part in the first half through Andre Villas-Boas in place of Wijnaldum and though Spurs were still in the game, they were too far to play from behind.
+The hosts made it four with an equaliser but City were fortunate to be in the game in the box. A fine move by Pochettino put the home side up three as Spurs found the break three minutes from time in injury time after half-time before City responded with another on goal.
+At half-time, City found the back of the net in what was undoubtedly an impressive effort from Ritchie and they had just enough to make it three before the break.
+Kanu had a fine offload in the 64th minute as Dele Alli opened the scoring in the first 20 minutes and it was City who found the net just minutes on as Tiote headed in a low low shot from distance. Tiote had the chance just moments before too late in the break as the Argentine was headed in by a free kick from a shot near the top corner but he was too late as Wayne Rooney raced down to finish the ball off Kane.
+Cameron Viggo behind the scenes had the game against them as he had the lone shot from cover but he could not make it past Jozy Altidore in the 86th minute. City had the shots though as the visitors were level on the break when Van Persie brought the ball into position and had them up high before the break when the Spaniard was brought down by a shot from distance.
+O'Meara had the game flowing with crosses from Alvaro Morata and the hosts had the ball in their hands as the Brazilian was given the chance to finish off Kane in the 89th minute but he was not there to make it past Mata in the 88th minute as O'Meara went over for Kane before the break.
+With City 1-1 at home to the winners of a Premier League away league and the away side in last place, City had the run of form they needed and just six minutes into the second half it looked like the hosts might be just their half as they went into the break in the game they lost in Burnley to win it all in a game they had won just over a month earlier.
+The hosts found the back of the net just two minutes from time in the 86th minute when Tiote ran wide from the penalty spot, he looked unstoppable as he was cleared off the ball by Joe Allen and he was saved early on while City went down 2-1 in the 16th minute when Kane had the chance to make it five in a row when the Argentine was saved by the space and the space of space behind him.
+City had the ball in their hands moments later with Van Persie unmarked as they had a challenge on Michael Carrick and the home crowd were just eight points clear at the top of the Premier League so they had the momentum to take to the game they had lost in Burnley.
+With eight minutes to play in the first half, City had their shots in their hands as Tiote had the chance to make it eight in a
+```
+
 ## Demo
 
 ## Video
