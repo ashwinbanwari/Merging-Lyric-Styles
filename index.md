@@ -2,10 +2,15 @@
 GPT-2 is one of the world's largest language models publicly available. It has 1.5 billion parameters and was trained on over 40GB of internet text over a long period of time. Training a comprehensive language model from scratch takes lots of time and input data, so we use this model to start with, then use transfer learning to try to generate lyrics in a particular artists style. Uniquely, we experiment with use mixed training set of two different artists to see how well we can generate lyrics that match the styles of different artists, and evaluate using BLEU on how well the generated lyrics match either of the individuals styles.
 
 ## Problem Statement
+Different artists make many different lyrical styles. By listening to many songs, humans can distinguish different artists and different kinds of songs. Can we train a model on our computers to do so? In this project, we use a pre-trained GPT-2 model to let our model recognize and distinguish lyrical styles. We mix songs from The Beatles and Rihanna, which we extract using the lyricsgenius package, letting our model generate lyrics, and we evaluate the generated output using the minhash algorithm.
 
 ## Related Work
+To extract the lyrics, we use Genius API stacked with lyricsgenius package made by John Miller (https://github.com/johnwmillr/LyricsGenius).
+To evaluate the lyrics, we use modified minhash algorithm to fit into the Python 3 environment (https://github.com/rahularora/MinHash)
 
 ## Methodology
+To use the lyricgenius package, we put artists' names inside a list and specify the number of songs we need for each artist.
+To use the minhash algorithm, we put generated songs in files and run "python minhahs.py" to determine similarity
 
 ## Experiments
 
