@@ -16,8 +16,15 @@ To use the minhash algorithm, we put generated songs in files and run "python mi
 
 ## Results
 The generated result for a mixture of Beatles and Rihanna is very similar to Rihanna's "Close to you" with Jaccard coefficient:  0.0011507479861910242.
-The top ten most similar songs to the generated result for the mixture are as follows: "Close to you," "Happiness is a Warm Gun," "Norwegian Wood (This Bird Has Flown)," "Rocky Raccoon," "Ob-La-Di, Ob-La-Da," "Oh! Darling," "Golden Slumbers," "S&M," "Michelle."
-Additionally, minhash thinks Beatles' "Norwegian Wood (This Bird Has Flown)" and Rihanna's "What now" are extremely similar with Jaccard coefficient 0.0.
+The top ten most similar songs to the generated result for the mixture are as follows: "Close to you," "Happiness is a Warm Gun," "Norwegian Wood (This Bird Has Flown)," "Rocky Raccoon," "Ob-La-Di, Ob-La-Da," "Oh! Darling," "Golden Slumbers," "S&M," and "Michelle."
+
+The generated result for Beatles only is most similar to "Rocky Raccoon," but it is not significant because the Jaccard index is not larger than 0.5.
+The top five most similar songs to the generated result for Beatles only are as follows: "Rocky Raccoon," "Norwegian Wood (This Bird Has Flown)," "Yellow Submarine," "Oh! Darling," and "Happiness is a Warm Gun."
+
+The generated result for Rihanna only is most similar to "Close to You", but it is not significant because the Jaccard index is not larger than 0.5.
+The top five most similar songs to the generated result for Rihanna only are as follows: "Close to You," "What Now," "Don’t Stop the Music," "Only Girl (In the World)," and "James Joint".
+
+Additionally, minhash thinks Beatles' "Norwegian Wood (This Bird Has Flown)" and Rihanna's "What now" are extremely similar with Jaccard coefficient 0.0. Beatles' "Michelle" and Rihanna's "Take a bow" are also extremely similar with Jaccard coefficient 0.0.
 
 ## Figures
 
