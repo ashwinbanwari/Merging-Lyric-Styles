@@ -10,11 +10,14 @@ To evaluate the lyrics, we use modified minhash algorithm to fit into the Python
 
 ## Methodology
 To use the lyricgenius package, we put artists' names inside a list and specify the number of songs we need for each artist.
-To use the minhash algorithm, we put generated songs in files and run "python minhahs.py" to determine similarity
+To use the minhash algorithm, we put generated songs in files and run "python minhash.py" to determine similarity
 
 ## Experiments
 
 ## Results
+The generated result for a mixture of Beatles and Rihanna is very similar to Rihanna's "Close to you" with Jaccard coefficient:  0.0011507479861910242.
+The top ten most similar songs to the generated result for the mixture are as follows: "Close to you," "Happiness is a Warm Gun," "Norwegian Wood (This Bird Has Flown)," "Rocky Raccoon," "Ob-La-Di, Ob-La-Da," "Oh! Darling," "Golden Slumbers," "S&M," "Michelle."
+Additionally, minhash thinks Beatles' "Norwegian Wood (This Bird Has Flown)" and Rihanna's "What now" are extremely similar with Jaccard coefficient 0.0.
 
 ## Figures
 
