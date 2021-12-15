@@ -4,6 +4,8 @@ import pickle
 from heapq import heapify,heappop,heappush
 import random
 
+random.seed(0)
+
 totalShingles = 23880
 pklHandler = open("docShingleDict.pkl", 'rb')
 docShingleDict= pickle.load(pklHandler)
@@ -84,21 +86,21 @@ docJaccard = {}
 
 def pop(jaccardList):
   estimatedJaccardC, fileX = heappop(jaccardList)
-  print(fileX,)
+  print((estimatedJaccardC, fileX))
 
 print("Three nearest neighbors for the first 10 files")
 
 for x in range(0,1):
   file1 = "file" + getFileNo(x)
   estimatedJaccardList = []
-  for y in range(16,31):
+  for y in range(0,31):
     file2 = "file" + getFileNo(y)
     if file1 != file2:
       heappush(estimatedJaccardList, (-estimateMatrix[x][y], file2))
   
   #print estimatedJaccardList
   print("\n" + file1 + ":",)
-  for x in range(0,5):
+  for x in range(0,10):
     pop(estimatedJaccardList)
     
   
