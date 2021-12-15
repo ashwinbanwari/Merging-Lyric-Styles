@@ -1,5 +1,5 @@
 ## Abstract
-
+GPT-2 is one of the world's largest language models publicly available. It has 1.5 billion parameters and was trained on over 40GB of internet text over a long period of time. Training a comprehensive language model from scratch takes lots of time and input data, so we use this model to start with, then use transfer learning to try to generate lyrics in a particular artists style. Uniquely, we experiment with use mixed training set of two different artists to see how well we can generate lyrics that match the styles of different artists, and evaluate using BLEU on how well the generated lyrics match either of the individuals styles.
 
 ## Problem Statement
 
