@@ -24,7 +24,7 @@ To use the minhash algorithm, we put generated songs in files and run "python mi
 <details>
  <summary> Figure 1: Loss w/ Beatles Training Data </summary>
  
- ![](https://github.com/ashwinbanwari/Merging-Lyric-Styles/blob/gh-pages/GPT-2%20Loss%20with%20Beatles%20Training%20Data.png)
+ ![](beatles.png)
  </details>
  
  <details>
