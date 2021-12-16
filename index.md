@@ -93,7 +93,7 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 | 0.56 | Pour It Up (R) | Take a Bow (R) | R |
 
 ## Results
-
+As seen from Figure 1,2,3, the model trained relatively well in the sense that with our hyperparameter selection, the loss got closer and closer to zero. 
 ## Figures
 
  Figure 1: Loss w/ Beatles Training Data
