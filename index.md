@@ -34,7 +34,7 @@ Once we generate text for our three models, we use the minhash algorithm which w
     
 To use the minhash algorithm, we put every generated song in separate files. Run "python shingles.py" to generate shingles and save the results using pickle. Based on the length of the saved result, we set the parameter "totalShingles" in minhash.py. Also, to make the result consistent, we set random seed to 0. Then we run "python minhash.py" to determine similarity. Regarding the data, folder 'test_b' saves The Beatles' result; folder 'test_m' saves the mixed result; and folder 'test_r' saves Rihanna's result.
 
-### Mixed input result: (B for The Beatles and R for Rihanna)
+### Mixed input result with generated lyrics: (B for The Beatles and R for Rihanna)
 | Jaccard Index | Song | Artist |
 | :---: | :----: | :---: |
 | 0.44 | Rocky Raccoon | B |
@@ -48,7 +48,7 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 | 0.28 | Oh! Darling | B |
 | 0.28 | Pour It Up | R |
 
-### The Beatles input result:
+### The Beatles input result with generated lyrics: 
 | Jaccard Index | Song |
 | :---: | :----: |
 | 0.36 | Don't Let Me Down |
@@ -57,7 +57,7 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 | 0.2 | Help! |
 | 0.2 | Ob-La-Di, Ob-La-Da |
 
-### Rihanna input result:
+### Rihanna input result with generated lyrics:
 | Jaccard Index | Song |
 | :---: | :----: |
 | 0.48 | S&M |
