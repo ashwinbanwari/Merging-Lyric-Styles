@@ -68,18 +68,31 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 | 0.32 | Yeah, I Said It |
 | 0.32 | What Now |
 
-### Similar songs (Jaccard Index >= 0.5) in popularity order:
-| Jaccard Index | Song1 | Song2 |
-| :---: | :---: | :---: |
-| 0.64 | Ob-La-Di, Ob-La-Da (B) | Woo (R) |
-| 0.52 | Ob-La-Di, Ob-La-Da (B) | What Now (R) |
-| 0.6 | Rocky Raccoon (B) | Man Down (R) |
-| 0.6 | Rocky Raccoon (B) | Don't Stop the Music (R) |
-| 0.52 | Back in the U.S.S.R. (B) | What Now (R) |
-| 0.56 | Man Down (R) | Don't Stop the Music (R) |
-| 0.56 | Close to You (R) | What Now (R) |
-| 0.52 | Woo (R) | Only Girl (In the World) |
-| 0.56 | Pour It Up (R) | Take a Bow (R) |
+### Similar songs (Jaccard Index >= 0.4) in popularity order (B for The Beatles, R for Rihanna, M for mix):
+| Jaccard Index | Song1 | Song2 | Artist |
+| :---: | :---: | :---: | :---: |
+| 0.48 | Michelle (B) | When I’m Sixty-Four (B) | B |
+| 0.48 | Michelle (B) | Yeah, I Said It (R) | M |
+| 0.48 | Help! (B) | Close to You (R) | M |
+| 0.48 | Ob-La-Di, Ob-La-Da (B) | Man Down (R) | M |
+| 0.64 | Ob-La-Di, Ob-La-Da (B) | Woo (R) | M |
+| 0.48 | Ob-La-Di, Ob-La-Da (B) | Don’t Stop the Music (R) | M |
+| 0.52 | Ob-La-Di, Ob-La-Da (B) | What Now (R) | M |
+| 0.48 | Don’t Let Me Down (B) | Pose (R) | M |
+| 0.6 | Rocky Raccoon (B) | Man Down (R) | M |
+| 0.6 | Rocky Raccoon (B) | Don't Stop the Music (R) | M |
+| 0.48 | Rocky Raccoon (B) | What Now (R) | M |
+| 0.52 | Back in the U.S.S.R. (B) | What Now (R) | M |
+| 0.48 | Sgt. Pepper’s Lonely Hearts Club Band (B) | Take a Bow (R) | M |
+| 0.56 | Man Down (R) | Don't Stop the Music (R) | R |
+| 0.48 | Man Down (R) | What Now (R) | R |
+| 0.56 | Close to You (R) | Don't Stop the Music (R) | R |
+| 0.56 | Close to You (R) | What Now (R) | R |
+| 0.52 | Woo (R) | Only Girl (In the World) (R) | R |
+| 0.48 | Woo (R) | What Now (R) | R |
+| 0.48 | Woo (R) | We Found Love (R) | R |
+| 0.48 | Pour It Up (R) | What Now (R) | R |
+| 0.56 | Pour It Up (R) | Take a Bow (R) | R |
 
 ## Results
 

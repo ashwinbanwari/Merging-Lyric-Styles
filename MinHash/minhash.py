@@ -67,11 +67,11 @@ for x in range(0,16):
     col.append(count/25)
   estimateMatrix.append(col)
   
-print("\nList of Documents with J(d1,d2) more than 0.5")
+print("\nList of Documents with J(d1,d2) more than 0.45")
 for x in range(0,16):
   file1 = "file" + getFileNo(x)
   for y in range(x,16):
-    if estimateMatrix[x][y] > 0.5:
+    if estimateMatrix[x][y] > 0.45:
       file2 = "file" + getFileNo(y)
       if file1 != file2:
         shinglesSet1 = docShingleDict[file1]
@@ -88,7 +88,7 @@ def pop(jaccardList):
   estimatedJaccardC, fileX = heappop(jaccardList)
   print((estimatedJaccardC, fileX))
 
-print("Three nearest neighbors for the first 10 files")
+print("Nearest neighbors for the generated lyrics")
 
 for x in range(0,1):
   file1 = "file" + getFileNo(x)
