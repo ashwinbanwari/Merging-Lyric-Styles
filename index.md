@@ -22,7 +22,7 @@ Much of this paper is only possible due to GPT-2, a language massive language mo
 
 ### Accessing GPT-2 Model
 GPT-2 is one of the world's largest language models publicly available. It has 1.5 billion parameters and was trained on over 40GB of internet text over a long period of time. Training a comprehensive language model from scratch takes lots of time and input data, so we use this model to start with, then use transfer learning to try to generate lyrics in a particular artists style. We chose this model because of ease of use and accessibility as well as the fact that it has a good model for English language and can generate English sentences to a decent degree already. We use the simple-gpt-2 package to get the parameters and to continue to train the model. It is a transformer-based models similar to those in past homework (except with two decoders instead of one), and we use it to generate next character giving some past charactars, thus generating text of arbitrary length. See transformer architecture in GPT-2 below. It uses many familiar techniques like positional embedding and attention, in addition to further advanced techniques.
- <img src ="https://media.istockphoto.com/vectors/black-plus-sign-positive-symbol-vector-id688550958?k=20&m=688550958&s=612x612&w=0&h=wvzUqT3u3feYygOXg3GB9pYBbqIsyu_xpvfTX-6HOd0=" width="100%"/>
+ <img src ="https://www.researchgate.net/publication/345654307/figure/fig2/AS:956166976839681@1604979380774/Architecture-of-the-GPT-2-Transformer-model.ppm" width="50%"/>
  
 
 ### Obtaining dataset
