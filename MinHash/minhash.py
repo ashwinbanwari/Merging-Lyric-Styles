@@ -6,7 +6,7 @@ import random
 
 random.seed(0)
 
-totalShingles = 23880
+totalShingles = 2400
 pklHandler = open("docShingleDict.pkl", 'rb')
 docShingleDict= pickle.load(pklHandler)
 pklHandler.close()
@@ -52,11 +52,11 @@ def getFileNo(x):
   return x
 
 estimateMatrix = []
-for x in range(0,31):
+for x in range(0,16):
   doc1 = "file"+getFileNo(x)
   doc1LowestShingles = docLowestShingleID[doc1]
   col = []
-  for y in range(0,31):
+  for y in range(0,16):
     doc2 = "file"+getFileNo(y)
     doc2LowestShingles = docLowestShingleID[doc2]
     count = 0
@@ -68,9 +68,9 @@ for x in range(0,31):
   estimateMatrix.append(col)
   
 print("\nList of Documents with J(d1,d2) more than 0.5")
-for x in range(0,31):
+for x in range(0,16):
   file1 = "file" + getFileNo(x)
-  for y in range(0,31):
+  for y in range(x,16):
     if estimateMatrix[x][y] > 0.5:
       file2 = "file" + getFileNo(y)
       if file1 != file2:
@@ -93,14 +93,14 @@ print("Three nearest neighbors for the first 10 files")
 for x in range(0,1):
   file1 = "file" + getFileNo(x)
   estimatedJaccardList = []
-  for y in range(0,31):
+  for y in range(0,16):
     file2 = "file" + getFileNo(y)
     if file1 != file2:
       heappush(estimatedJaccardList, (-estimateMatrix[x][y], file2))
   
   #print estimatedJaccardList
   print("\n" + file1 + ":",)
-  for x in range(0,10):
+  for x in range(0,5):
     pop(estimatedJaccardList)
     
   
