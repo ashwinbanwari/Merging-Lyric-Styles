@@ -66,7 +66,7 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 | 0.32 | Yeah, I Said It |
 | 0.32 | What Now |
 
-### Similar songs (Jaccard Index >= 0.4) in popularity order (B for The Beatles, R for Rihanna, M for mix):
+### Similar songs (Jaccard Index >= 0.45) in popularity order (B for The Beatles, R for Rihanna, M for mix):
 | Jaccard Index | Song1 | Song2 | Artist |
 | :---: | :---: | :---: | :---: |
 | 0.48 | Michelle (B) | When I’m Sixty-Four (B) | B |
