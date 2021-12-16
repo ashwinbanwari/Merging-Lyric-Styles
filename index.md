@@ -1,3 +1,6 @@
+---
+driveId: 11q92_96DGOtYMK0_KMbvukWoV21c3dY7/preview
+---
 # SingerMerge
 
 ## Abstract
@@ -5,6 +8,10 @@ Throughout time and space, different artists have defined many different lyrical
 
 ## Video
 
+
+Interactive Google Collab File: https://colab.research.google.com/drive/1rC4BCLJUJGCtxxQZ0AD9PUjFvzlmB_cH
+
+{% include googleDrivePlayer.html id=page.driveId %}
 
 ## Problem Statement
 We want to explore how well we can generate lyrics in a particular singer's style, and further, how well can we generate music in the combined style of two very different artists such that it has similarity to both of the singers independently. Specifically, we focus on the artists Beatles and Rihanna as they are two very different singers with lots of publically available lyrics. We use transfer learning from pre-trained GPT-2 to explore this and experiment with hyperparameters to generate reasonably musically sounding text that doesn't overfit and copy lines from input data. We finally explore ways to evaluate results and see how stylistically similar our generated lyrics for the Beatles is compared to real Beatles lyrics, how stylistically similar generated lyrics for Rihanna are compared to real Rihanna lyrics, and finally how stylistically similar our generated lyrics in their "mixed" style is to each of Beatles and Rihanna, independently. If we can generate text that is directly with style "in between" two different styles, it can have large implications on our understanding of language. 
