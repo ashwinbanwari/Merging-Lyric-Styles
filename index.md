@@ -10,7 +10,7 @@ Throughout time and space, different artists have defined many different lyrical
 
 
 Interactive Google Collab File: https://colab.research.google.com/drive/1rC4BCLJUJGCtxxQZ0AD9PUjFvzlmB_cH
- <video src="https://user-images.githubusercontent.com/52060395/146327453-7473c38f-54d6-4bc3-b9e8-2220490e6e9f.mp4" controls="controls" style="max-width: 730px;">
+ <video src="https://user-images.githubusercontent.com/52060395/146327453-7473c38f-54d6-4bc3-b9e8-2220490e6e9f.mp4" controls="controls" style="max-width: 90%;">
 </video>
 
 
