@@ -21,28 +21,21 @@ To use the minhash algorithm, we put generated songs in files and run "python mi
 
 ## Figures
 
-<details>
- <summary> Figure 1: Loss w/ Beatles Training Data </summary>
+ Figure 1: Loss w/ Beatles Training Data
  
  ![](beatles.png)
- </details>
  
- <details>
- <summary> Figure 2: Loss w/ Rihanna Training Data </summary>
+ Figure 2: Loss w/ Rihanna Training Data
  
  ![](GPT-2%20Loss%20with%20Rihanna%20Training%20Data.png)
- </details>
  
  
- <details>
- <summary> Figure 3: Loss w/ Mixed Training Data </summary>
+ Figure 3: Loss w/ Mixed Training Data
  
  ![](GPT-2%20Loss%20with%20Beatles%2BRihanna%20Training%20Data.png)
- </details>
 
  
-<details>
- <summary>Figure 4 generated text after 200 iteration of training on Beatles</summary>
+ Figure 4 generated text after 200 iteration of training on Beatles
  
 ```
 ======== SAMPLE 1 ========
@@ -98,7 +91,6 @@ The hosts found the back of the net just two minutes from time in the 86th minut
 City had the ball in their hands moments later with Van Persie unmarked as they had a challenge on Michael Carrick and the home crowd were just eight points clear at the top of the Premier League so they had the momentum to take to the game they had lost in Burnley.
 With eight minutes to play in the first half, City had their shots in their hands as Tiote had the chance to make it eight in a
 ```
- </details>
 
  ## Demo
 
