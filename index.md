@@ -17,18 +17,25 @@ We were able to actually obtain the model parameters and perform additional trai
 
 ## Methodology
 
-GPT-2 is one of the world's largest language models publicly available. It has 1.5 billion parameters and was trained on over 40GB of internet text over a long period of time. Training a comprehensive language model from scratch takes lots of time and input data, so we use this model to start with, then use transfer learning to try to generate lyrics in a particular artists style. Uniquely, we experiment with use mixed training set of two different artists to see how well we can generate lyrics that match the styles of different artists, and evaluate using BLEU on how well the generated lyrics match either of the individuals styles.
+### Accessing GPT-2 Model
+GPT-2 is one of the world's largest language models publicly available. It has 1.5 billion parameters and was trained on over 40GB of internet text over a long period of time. Training a comprehensive language model from scratch takes lots of time and input data, so we use this model to start with, then use transfer learning to try to generate lyrics in a particular artists style. We chose this model because of ease of use and accessibility as well as the fact that it has a good model for English language and can generate English sentences to a decent degree already. We use the simple-gpt-2 package to get the parameters and to continue to train the model. It is a transformer-based models similar to those in past homework (except with two decoders instead of one), and we use it to generate next character giving some past charactars, thus generating text of arbitrary length.  
 
-In this project, we use a pre-trained language model(GPT-2) and use transfer learning to let our model learn and embed a type of English in the style of a particular artist. Specifically, we make three models, in the style of Beatles, in the style of Rihanna, and in the mixed style of the two (using both their lyrics as input to the model). Then, we generate lyrics using each of the models. Finally, we evaluate our result. We mix songs from The Beatles and Rihanna in the training data, to see if we can make our model generate "mixed" style lyrics that feature aspects of both artist. Lyrics are extracted using the lyricsgenius package. Then, using transfer learning from GPT2, we let our model generate lyrics, and we evaluate the generated output using the minhash algorithm to compare its similarity to "true" lyrics of artists it was trained on.
+### Obtaining dataset
+To use the lyricgenius package, we put artists' names inside a list and specify the number of songs we need for each artist, then the package can output the names of songs in popularity order and store all lyrics into a text file. To distinguish different songs, there is a tag "EmbedShare URLCopyEmbedCopy <endoftext>" between every pair of songs.
+    
+### Tuning Hyperparameters
+To tune the hyperparameters, we start off with random search trying out different values of training rate, and number of epoch cutoff. Eventually, we found a learning rate of 1e-5 to work well, and we used 400 epochs for training set of Beatles, and of Rihanna, and 600 epochs for the combined training set (it was larger and thus we saw loss converged slower). Since loss is not exactly the best evaluation metric to see how well text was being generated, we also used human evaluation in seeing how much quality the generated text seemed to be after a certain amount of epochs, then deciding whether it needed more or less. 
 
-First, we use gpt-2-simple to obtain the model parameters and then utilize its API to set hyperparameters like iterations and learning rate. What we do is then use transfer learning. Specifically, using the pretrained model, we do FURTHER training on particular training data. Specifically, we use three sets of training data, Beatles lyrics dataset, Rihanna lyrics dataset, and a mixed dataset with both of their lyrics. We use lyricsgenius package to generate these datasets. For each of these datasets, we find optimal hyperparameters and train it for 400-600 iterations depending on the size of the dataset (and to avoid overfitting as noticed happening when training for too long). Once we make models that are sufficiently trained on the particular datasets with low loss, we generate text using the GPT-2 model. It is a transformer-based models similar to those in past homework (except with two decoders instead of one), and we use it to generate next character giving some past charactars, thus generating text of arbitrary length. Once we generate text for our three models, we use the minhash algorithm which was our best method to measure stylistic similarity. To measure stylistic similarity was a very difficult ask, as most text similarity methods are based on _semantic_ meaning, rather than style, however this was the best approach we found. 
+First, we use gpt-2-simple to obtain the model parameters and then utilize its API to set hyperparameters like iterations and learning rate. What we do is then use transfer learning. Specifically, using the pretrained model, we do FURTHER training on particular training data. Specifically, we use three sets of training data, Beatles lyrics dataset, Rihanna lyrics dataset, and a mixed dataset with both of their lyrics. We use lyricsgenius package to generate these datasets. For each of these datasets, we find optimal hyperparameters and train it for 400-600 iterations depending on the size of the dataset (and to avoid overfitting as noticed happening when training for too long). Once we make models that are sufficiently trained on the particular datasets with low loss, we generate text using the GPT-2 model. 
 
 To use the lyricgenius package, we put artists' names inside a list and specify the number of songs we need for each artist, then the package can output the names of songs in popularity order and store all lyrics into a text file. To distinguish different songs, there is a tag "EmbedShare URLCopyEmbedCopy <endoftext>" between every pair of songs.
     
-To use the minhash algorithm, we put every generated song in separate files. Run "python shingles.py" to generate shingles and save the results using pickle. Based on the length of the saved result, we set the parameter "totalShingles" in minhash.py. Also, to make the result consistent, we set random seed to 0. Then we run "python minhash.py" to determine similarity. Regarding the data, folder 'test_b' saves The Beatles' result; folder 'test_m' saves the mixed result; and folder 'test_r' saves Rihanna's result.
-## Experiments
 
-## Results
+## Evaluation
+Once we generate text for our three models, we use the minhash algorithm which was our best method to measure stylistic similarity. To measure stylistic similarity was a very difficult ask, as most text similarity methods are based on _semantic_ meaning, rather than style, however this was the best approach we found.
+    
+To use the minhash algorithm, we put every generated song in separate files. Run "python shingles.py" to generate shingles and save the results using pickle. Based on the length of the saved result, we set the parameter "totalShingles" in minhash.py. Also, to make the result consistent, we set random seed to 0. Then we run "python minhash.py" to determine similarity. Regarding the data, folder 'test_b' saves The Beatles' result; folder 'test_m' saves the mixed result; and folder 'test_r' saves Rihanna's result.
+
 ### Mixed input result: (B for The Beatles and R for Rihanna)
 | Jaccard Index | Song | Artist |
 | :---: | :----: | :---: |
@@ -73,6 +80,8 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 | 0.56 | Close to You (R) | What Now (R) |
 | 0.52 | Woo (R) | Only Girl (In the World) |
 | 0.56 | Pour It Up (R) | Take a Bow (R) |
+
+## Results
 
 ## Figures
 
