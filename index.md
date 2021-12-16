@@ -1,3 +1,5 @@
+## SingerMerge
+
 ## Abstract
 Throughout time and space, different artists have defined many different lyrical styles. From listening to a variety of songs, humans have a decent capacity to distinguish different artists, based just off lyrics. Can we train a model on our computers to do so, and even further, train a model to generate lyrics in that artists style? Text generation is a core problem in natural language processing. With the advent of massive language models like GPT-2, GPT-3, MT-NLG, we have become capable of producing significantly more realistic text than in the past.  Many of these models are transformer-based meaning that they can weight different parts of input data to get a better understanding of language and generate more logical text. We utilize these advances and focus on how well can we generate musical lyrics in the style of a particular artist using transfer learning from a pre-trained language model. 
 
