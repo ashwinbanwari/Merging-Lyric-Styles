@@ -28,8 +28,6 @@ To tune the hyperparameters, we start off with random search trying out differen
 
 First, we use gpt-2-simple to obtain the model parameters and then utilize its API to set hyperparameters like iterations and learning rate. What we do is then use transfer learning. Specifically, using the pretrained model, we do FURTHER training on particular training data. Specifically, we use three sets of training data, Beatles lyrics dataset, Rihanna lyrics dataset, and a mixed dataset with both of their lyrics. We use lyricsgenius package to generate these datasets. For each of these datasets, we find optimal hyperparameters and train it for 400-600 iterations depending on the size of the dataset (and to avoid overfitting as noticed happening when training for too long). Once we make models that are sufficiently trained on the particular datasets with low loss, we generate text using the GPT-2 model. 
 
-To use the lyricgenius package, we put artists' names inside a list and specify the number of songs we need for each artist, then the package can output the names of songs in popularity order and store all lyrics into a text file. To distinguish different songs, there is a tag "EmbedShare URLCopyEmbedCopy <endoftext>" between every pair of songs.
-    
 
 ## Evaluation
 Once we generate text for our three models, we use the minhash algorithm which was our best method to measure stylistic similarity. To measure stylistic similarity was a very difficult ask, as most text similarity methods are based on _semantic_ meaning, rather than style, however this was the best approach we found.
