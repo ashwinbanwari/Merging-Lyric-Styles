@@ -45,7 +45,7 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 
 ### The Beatles input result:
 | Jaccard Index | Song |
-| :---: | :----: | :---: |
+| :---: | :----: |
 | 0.36 | Don't Let Me Down |
 | 0.24 | Back in the U.S.S.R. |
 | 0.24 | Sgt. Pepper’s Lonely Hearts Club Band |
@@ -54,7 +54,7 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 
 ### Rihanna input result:
 | Jaccard Index | Song |
-| :---: | :----: | :---: |
+| :---: | :----: |
 | 0.48 | S&M |
 | 0.36 | Woo |
 | 0.36 | Only Girl (In the World) |
@@ -63,7 +63,7 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 
 ### Similar songs (Jaccard Index >= 0.5) in popularity order:
 | Jaccard Index | Song1 | Song2 |
-| :---: | :----: | :---: | :---: | 
+| :---: | :---: | :---: |
 | 0.64 | Ob-La-Di, Ob-La-Da (B) | Woo (R) |
 | 0.52 | Ob-La-Di, Ob-La-Da (B) | What Now (R) |
 | 0.6 | Rocky Raccoon (B) | Man Down (R) |
