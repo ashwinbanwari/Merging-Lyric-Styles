@@ -96,7 +96,12 @@ To use the minhash algorithm, we put every generated song in separate files. Run
 | 0.56 | Pour It Up (R) | Take a Bow (R) | R |
 
 ## Results
-As seen from Figure 1,2,3, the model trained relatively well in the sense that with our hyperparameter selection, the loss got closer and closer to zero. 
+As seen from Figure 1,2,3, the model trained relatively well in the sense that with our hyperparameter selection, the loss got closer and closer to zero seen in Figures 1, 2, and 3. When trying to generate text from a partially trained model, we saw that it outputted partially "music-like" text and other news-like text. This problem was reduced as training continued indicating the model was better learning about musical text. 
+
+    Rihanna's songs are generally longer than The Beatles', and based on the table "Similar songs," Rihanna's songs are more similar to each other than The Beatles' songs.
+Regarding the evaluation using Jaccard Index, we found that the result is promising. The Jaccard Index is lower for The Beatles' songs, which is expected because The Beatles' songs are more different from each other. In top 10 similarity between generated lyrics and mixed songs, the distribution of The Beatles' and Rihanna's songs are nearly even, which well indicates that we successfully generated lyrics with style "in between" two different styles. However, The best Jaccard Index for generated lyrics with one of the categories, i.e. The Beatles', mix, and Rihanna, are slightly worse than the best results in table "Similar songs."
+    
+    The most difficult part of this was evaluation as the Jaccard score while helpful, was still not very good for comparing stylistic similarities, and thought that some Beatles songs are more similar with Rihanna songs than they are with each other, which shouldn't be true. 
 ## Figures
 
  Figure 1: Loss w/ Beatles Training Data
